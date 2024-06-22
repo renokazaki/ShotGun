@@ -1,0 +1,23 @@
+.container{
+    background-color: #430135;
+    height: 100px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center; /* 垂直中央に配置 */
+    flex-direction: column;
+    flex: 1;
+
+}
+.header {
+    background-color: antiquewhite;
+    margin: 0; /* 余白を取り除く */
+    padding: 0; /* 内側の余白を取り除く */
+    display: flex;
+    position: relative;
+    align-items: center; /* 垂直中央に配置 */
+    justify-content: center; /* 水平方向に中央配置（必要に応じて） */
+    border-radius: 99px;
+    height: 40px;
+    width: 200px;
+}

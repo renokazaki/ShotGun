@@ -1,0 +1,156 @@
+html, body {
+    margin: 0;
+    background-color: #153d41;
+}
+
+.field-container {
+    height: 100%;
+    width: 100%;
+  }
+
+  .myFieldContainer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  /* //以下左サイド */
+
+  .leftContainer{
+    display: flex;
+    background-color: aqua;
+    width: 500px;
+    height: 600px;
+    border: 3px solid black; /* ボーダーを追加 */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .userLeft{
+    border-radius: 99px;
+    height: 5%;
+    width: 70%;
+    background-color: #1da536;
+    margin-top: 10px;
+  }
+
+  .leftItemContainer{
+    background-color: #1da536;
+    height: 75%;
+    width: 90%;
+    margin-top :20%;
+    display: flex;
+    flex-wrap: wrap; /* 折り返し */
+    justify-content: space-evenly;
+  }
+
+.leftItems{
+  background-color: #bb531f;
+  height: 100px;
+  width: 100px;
+  border: 3px solid black; /* ボーダーを追加 */
+  margin-top: 15%;
+
+}
+
+
+    /* //以下真ん中サイド */
+
+  .centerContainer{
+    background-color: rgb(31, 144, 86);
+    width: 500px;
+    height: 600px;  
+    border: 3px solid black; /* ボーダーを追加 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .centerItemContainer{
+    height: 70%;
+    width: 100%;
+    background-color: #d83d04;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .CentaerButtonContainer{
+    height: 40%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    background-color: #bb531f;
+    justify-content: space-evenly;
+
+  }
+
+  .attackToOtherButton{
+    height: 40%;
+    border-radius: 99px;
+  }
+
+  .attackToMeButton{
+    height: 40%;
+    border-radius: 99px;
+  }
+
+
+  .CenterGunContainer{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    background-color: #bb531f;
+    justify-content: space-evenly;  }
+
+    .CenterDiscriptionContainer{
+      height: 30%;
+      width: 100%;
+      display: flex;
+      background-color: #bb531f;
+      justify-content: space-evenly;  }
+
+    /* //以下右サイド */
+
+
+  .rightContainer{
+    display: flex;
+    background-color: rgb(127, 159, 28);
+    width: 500px;
+    height: 600px;  
+    border: 3px solid black; /* ボーダーを追加 */
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+  .userRight{
+    border-radius: 99px;
+    height: 5%;
+    width: 70%;
+    background-color: #1da536;
+    margin-top: 10px;
+  }
+
+
+  .rightItemContainer{
+    background-color: #1da536;
+    height: 75%;
+    width: 90%;
+    margin-top :20%;
+    display: flex;
+    flex-wrap: wrap; /* 折り返し */
+    justify-content: space-evenly;
+  }
+
+
+  .rightItems{
+    background-color: #bb531f;
+    height: 100px;
+    width: 100px;
+    border: 3px solid black; /* ボーダーを追加 */
+    margin-top: 15%;
+  
+  }
+

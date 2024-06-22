@@ -1,0 +1,32 @@
+.CradsContainer {
+    height: auto; /* 高さを自動調整する */
+    display: flex;
+    flex-wrap: wrap; /* 折り返し */
+    justify-content: flex-start; /* 左揃え */
+    align-items: flex-start; /* 上揃え */
+    background-color: black;
+    margin-top: 260px; 
+    padding: 10px; /* カードとコンテナの余白 */
+    
+    width: 1470px;
+    margin-right: 0px;
+    margin-left: 100px;
+
+}
+
+.Card {
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    margin: 10px; /* カード間の余白 */
+}
+
+.SelectedCardsContainer{
+    flex-direction: row;
+    position: absolute;
+    left: 80px;
+}
+
+.selectedCard{
+
+}
