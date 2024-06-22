@@ -4,7 +4,8 @@ import { Header } from "./Header/Header";
 import ItemData from "./ItemData"; // カードデータのインポート
 
 import io from "socket.io-client";
-const socket = io.connect("http://localhost:5001");
+// const socket = io.connect("http://localhost:5001");
+const socket = io.connect("https://shotgun.onrender.com");
 
 export const Field = () => {
   const [messages, setMessages] = useState([]);
