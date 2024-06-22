@@ -16,7 +16,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "https://post-672j.onrender.com"||"http://localhost:3000",
+    origin: "https://shotgun.onrender.com"||"http://localhost:3000",
     // origin: "https://post-672j.onrender.com",
     methods: ["GET", "POST"],
   },

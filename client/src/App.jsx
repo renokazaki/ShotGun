@@ -3,8 +3,8 @@ import io from "socket.io-client";
 import { Field } from "./Components/Field/Field";
 // import "./App.css"; // ここでCSSファイルをインポート
 
-const socket = io.connect("http://localhost:5001");
-// const socket = io.connect("https://post-672j.onrender.com");
+// const socket = io.connect("http://localhost:5001");
+const socket = io.connect("https://shotgun.onrender.com");
 
 const App = () => {
   const [myId, setMyId] = useState("");
