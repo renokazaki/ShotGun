@@ -1,6 +1,6 @@
 .container{
     background-color: #430135;
-    height: 100px;
+    height: 60px;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -19,5 +19,5 @@
     justify-content: center; /* 水平方向に中央配置（必要に応じて） */
     border-radius: 99px;
     height: 40px;
-    width: 200px;
+    width: 100px;
 }

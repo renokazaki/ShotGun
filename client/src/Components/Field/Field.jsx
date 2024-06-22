@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import "./Field.css";
 import { Header } from "./Header/Header";
 import ItemData from "./ItemData"; // カードデータのインポート
+import ShotGunImage from "./ShotGun.jpg";
 
 import io from "socket.io-client";
 // const socket = io.connect("http://localhost:5001");
@@ -45,6 +46,8 @@ export const Field = () => {
           {/* 左 */}
           <div className="leftContainer">
             <div className="userLeft">left</div>
+            <div className="userLeft">♡♡♡♡♡♡♡</div>
+
             <div className="leftItemContainer">
               {ItemData.slice(0, 8).map((item) => (
                 <img
@@ -66,16 +69,22 @@ export const Field = () => {
                 <button className="attackToOtherButton">相手へ○○</button>
                 <button className="attackToMeButton">自分へ○○</button>
               </div>
-              <div className="CenterGunContainer">ここに画像が入る</div>
-            </div>
+              <img
+                className="CenterGunContainer"
+                src={ShotGunImage}
+                alt="ShotGun"
+              />
 
-            <div className="CenterDiscriptionContainer">
-              {selectedItem.description}
+              <div className="CenterDiscriptionContainer">
+                {selectedItem.description}
+              </div>
             </div>
           </div>
           {/* 右 */}
           <div className="rightContainer">
             <div className="userRight">right</div>
+            <div className="userRight">♡♡♡♡♡♡</div>
+
             <div className="rightItemContainer">
               {ItemData.slice(0, 8).map((item) => (
                 <img

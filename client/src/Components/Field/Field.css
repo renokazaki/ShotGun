@@ -29,16 +29,17 @@ html, body {
   .userLeft{
     border-radius: 99px;
     height: 5%;
-    width: 70%;
+    width: 80%;
     background-color: #1da536;
     margin-top: 10px;
+
   }
 
   .leftItemContainer{
     background-color: #1da536;
-    height: 75%;
-    width: 90%;
-    margin-top :20%;
+    height: 90%;
+    width: 100%;
+    margin-top :10%;
     display: flex;
     flex-wrap: wrap; /* 折り返し */
     justify-content: space-evenly;
@@ -58,8 +59,8 @@ html, body {
 
   .centerContainer{
     background-color: rgb(31, 144, 86);
-    width: 500px;
-    height: 600px;  
+    width: 300px;
+    height: 620px;
     border: 3px solid black; /* ボーダーを追加 */
     display: flex;
     flex-direction: column;
@@ -67,17 +68,17 @@ html, body {
   }
 
   .centerItemContainer{
-    height: 70%;
+    height: 100%;
     width: 100%;
     background-color: #d83d04;
     display: flex;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     flex-direction: column;
     align-items: center;
   }
 
   .CentaerButtonContainer{
-    height: 40%;
+    height: 30%;
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -128,7 +129,7 @@ html, body {
   .userRight{
     border-radius: 99px;
     height: 5%;
-    width: 70%;
+    width: 80%;
     background-color: #1da536;
     margin-top: 10px;
   }
@@ -136,9 +137,9 @@ html, body {
 
   .rightItemContainer{
     background-color: #1da536;
-    height: 75%;
-    width: 90%;
-    margin-top :20%;
+    height: 90%;
+    width: 100%;
+    margin-top :10%;
     display: flex;
     flex-wrap: wrap; /* 折り返し */
     justify-content: space-evenly;
