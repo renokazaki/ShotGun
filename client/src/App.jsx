@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import io from "socket.io-client";
 // import { Field } from "./Components/Field/Field";
-// import "./App.css"; // ここでCSSファイルをインポート
+import "./App.css"; // ここでCSSファイルをインポート
 
 // const socket = io.connect("http://localhost:5001");
 const socket = io.connect("https://shotgun.onrender.com");
