@@ -7,3 +7,18 @@
     transform-origin: 50% 84%;
     transform: rotateY(-90deg) translate3d(200px, 3px, 0px) scale3d(1, 2, 3) skew(87deg, -1deg);
   }
+  
+  .front, .back, .rightSide, .leftSide, .top, .bottom {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  
+  .front { background: red; }
+  .back { background: blue; transform: rotateY(180deg); }
+  .rightSide { background: green; transform: rotateY(90deg); }
+  .leftSide { background: yellow; transform: rotateY(-90deg); }
+  .top { background: purple; transform: rotateX(90deg); }
+  .bottom { background: orange; transform: rotateX(-90deg); }
+  
