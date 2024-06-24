@@ -26,20 +26,43 @@ const io = new Server(server, {
 let nextUserId = 1; // 次のユーザIDを管理
 
 io.on("connection", (socket) => {
-  console.log("New client connected");
+  // console.log("New client connected");
 
   const userId = nextUserId++;
   const userName = `User ${userId}`;
   const id = socket.id
-  console.log(id)
+  // console.log(id)
 
   //socketは自分のみ
 
     socket.on ("item_value",(id, icon, name, description) => {
-      console.log(id, icon, name, description)
+      console.log("サーバー"+id, icon, name, description)
       //ioはみんなに
       io.emit("item_value",{ id, icon, name, description})
   })
+
+  socket.on('opponent_life', (opponentLife) => {
+    console.log('Received opponentLife from client:', opponentLife);
+    
+
+    const newOpponentLife = opponentLife.slice(0, -1);
+    console.log('Processed opponentLife:', newOpponentLife);
+
+    // 全クライアントに新しい opponentLife を送信
+    io.emit('opponent_life', newOpponentLife);
+  });
+
+
+  socket.on('my_life', (myLife) => {
+    console.log('Received myLife from client:', myLife);
+    
+
+    const newMyLife = myLife.slice(0, -1);
+    console.log('Processed myLife:', newMyLife);
+
+    // 全クライアントに新しい opponentLife を送信
+    io.emit('my_life', newMyLife);
+  });
 
 
   socket.on("disconnect", () => {

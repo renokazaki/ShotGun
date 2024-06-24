@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import io from "socket.io-client";
-// import { Field } from "./Components/Field/Field";
-import "./App.css"; // ここでCSSファイルをインポート
+import { Field } from "./Components/Field/Field";
+// import "./App.css"; // ここでCSSファイルをインポート
 
 // const socket = io.connect("http://localhost:5001");
 const socket = io.connect("https://shotgun.onrender.com");
@@ -62,19 +62,9 @@ const App = () => {
   };
 
   return (
-    <div className="wrap-original-transform">
-      <div className="original-transform">
-        <div className="front">front</div>
-        <div className="back">back</div>
-        <div className="rightSide">rightSide</div>
-        <div className="leftSide">leftSide</div>
-        <div className="top">top</div>
-        <div className="bottom">bottom</div>
-      </div>
+    <div className="container">
+      <Field />
     </div>
-    // <div className="container">
-    //   <Field />
-    // </div>
   );
 };
 
