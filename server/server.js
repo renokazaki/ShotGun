@@ -29,17 +29,32 @@ io.on("connection", (socket) => {
   // console.log("New client connected");
 
   const userId = nextUserId++;
-  const userName = `User ${userId}`;
   const id = socket.id
   // console.log(id)
 
   //socketは自分のみ
+
+  socket.emit("your_data", { userId ,id});
+
 
     socket.on ("item_value",(id, icon, name, description) => {
       console.log("サーバー"+id, icon, name, description)
       //ioはみんなに
       io.emit("item_value",{ id, icon, name, description})
   })
+
+
+
+
+  socket.on("userName_value", (userName, id) => {
+    console.log(userName, id);
+    
+    // userNameオブジェクトのflagプロパティをtrueに設定
+    const updatedUserName = { ...userName, flag: true };
+
+    // 全クライアントに送信
+    io.emit("userName_value", updatedUserName, { userId, id });
+  });
 
   socket.on('opponent_life', (opponentLife) => {
     console.log('Received opponentLife from client:', opponentLife);

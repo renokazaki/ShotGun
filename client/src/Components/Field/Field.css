@@ -305,3 +305,12 @@ html, body {
 
 
 
+.inputUserNameContainer{
+  position: absolute;
+    background-color: #b40000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 45%;
+
+}
